@@ -13,7 +13,7 @@
             <div id="usuarioInfo">
                 <span>Usuário: Administrador (admin)</span>
                 <span>Papel: ADMIN</span>
-                <a href="javascript:void(0)">Logout</a>
+                <a href="javascript:void(0)" class="botao">Logout</a>
             </div>
         </header>
         <nav>
@@ -30,13 +30,13 @@
         </nav>
         <main>
             <form action="#">
-                <div>
+                <div class="grid">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                     <label for="registroConselho">Registro</label>
                     <input type="text" name="registroConselho" id="registroConselho">
                     <label for="especialidade">Especialidade</label>
-                    <select name="especialidade" id="especialidade">
+                    <select name="especialidade" id="especialidade" required>
                         <option value=""></option>
                         <option value="1">Especialidade A</option>
                         <option value="2">Especialidade B</option>
@@ -58,6 +58,8 @@
                     <label for="email">E-Mail</label>
                     <input type="text" name="email" id="email">
                 </div>
+                <input type="button" value="Cancelar">
+                <input type="submit" value="Salvar">
             </form>
             <table>
                 <thead>
@@ -74,7 +76,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>texto 01</td>
+                        <td class="fit">1</td>
                         <td>texto 02</td>
                         <td>texto 03</td>
                         <td>texto 04</td>
@@ -82,12 +84,12 @@
                         <td>texto 06</td>
                         <td>texto 07</td>
                         <td>
-                            <a href="javascript:void(0)">Editar</a>
-                            <a href="javascript:void(0)">Excluir</a>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                            <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>texto 01</td>
+                        <td class="fit">2</td>
                         <td>texto 02</td>
                         <td>texto 03</td>
                         <td>texto 04</td>
@@ -95,12 +97,12 @@
                         <td>texto 06</td>
                         <td>texto 07</td>
                         <td>
-                            <a href="javascript:void(0)">Editar</a>
-                            <a href="javascript:void(0)">Excluir</a>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                            <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>texto 01</td>
+                        <td class="fit">3</td>
                         <td>texto 02</td>
                         <td>texto 03</td>
                         <td>texto 04</td>
@@ -108,12 +110,12 @@
                         <td>texto 06</td>
                         <td>texto 07</td>
                         <td>
-                            <a href="javascript:void(0)">Editar</a>
-                            <a href="javascript:void(0)">Excluir</a>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                            <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>texto 01</td>
+                        <td class="fit">4</td>
                         <td>texto 02</td>
                         <td>texto 03</td>
                         <td>texto 04</td>
@@ -121,12 +123,12 @@
                         <td>texto 06</td>
                         <td>texto 07</td>
                         <td>
-                            <a href="javascript:void(0)">Editar</a>
-                            <a href="javascript:void(0)">Excluir</a>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                            <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>texto 01</td>
+                        <td class="fit">5</td>
                         <td>texto 02</td>
                         <td>texto 03</td>
                         <td>texto 04</td>
@@ -134,8 +136,8 @@
                         <td>texto 06</td>
                         <td>texto 07</td>
                         <td>
-                            <a href="javascript:void(0)">Editar</a>
-                            <a href="javascript:void(0)">Excluir</a>
+                            <a href="javascript:void(0)" class="botao">Editar</a>
+                            <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                         </td>
                     </tr>
                 </tbody>
