@@ -49,38 +49,24 @@
         <main>
             <form action="#" class="inativo">
                 <div class="grid">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required>
-                    <label for="registroConselho">Registro</label>
-                    <input type="text" name="registroConselho" id="registroConselho">
-                    <label for="especialidade">Especialidade</label>
-                    <select name="especialidade" id="especialidade" required>
+                    <label for="nomeCompleto">Nome</label>
+                    <input type="text" name="nomeCompleto">
+                    <label for="nomeUsuario">Usuário</label>
+                    <input type="text" name="nomeCompleto" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" required>
+                    <label for="ativo">Ativo</label>
+                    <input type="checkbox" name="ativo">
+                    <label for="papel">Papel</label>
+                    <select name="papel" required>
                         <option value=""></option>
-                        <option value="1">Especialidade A</option>
-                        <option value="2">Especialidade B</option>
-                        <option value="3">Especialidade C</option>
-                        <option value="4">Especialidade D</option>
-                        <option value="5">Especialidade E</option>
+                        <option value="ATENDENTE">ATENDENTE</option>
+                        <option value="ADMIN">ADMIN</option>
                     </select>
-                    <label for="unidade">Unidade</label>
-                    <select name="unidade" id="unidade">
-                        <option value=""></option>
-                        <option value="1">Unidade A</option>
-                        <option value="2">Unidade B</option>
-                        <option value="3">Unidade C</option>
-                        <option value="4">Unidade D</option>
-                        <option value="5">Unidade E</option>
-                    </select>
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" id="telefone">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email">
                 </div>
                 <input type="button" value="Cancelar">
                 <input type="submit" value="Salvar">
             </form>
-            <a href="javascript:void(0)"
-               id="load" class="botao">Carregar dados</a>
             <div id="comandos">
                 <a href="javascript:void(0)"
                    id="add"
@@ -97,23 +83,19 @@
                     <tr>
                         <th>ID</th>
                         <th>Nome</th>
-                        <th>Registro</th>
-                        <th>Especialidade</th>
-                        <th>Unidade</th>
-                        <th>Telefone</th>
-                        <th>E-mail</th>
+                        <th>Usuário</th>
+                        <th>Ativo</th>
+                        <th>Papel</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="fit">1</td>
-                        <td>texto 2</td>
-                        <td>texto 3</td>
-                        <td>texto 4</td>
-                        <td>texto 5</td>
-                        <td>texto 6</td>
-                        <td>texto 7</td>
+                        <td>Administrador</td>
+                        <td>admin</td>
+                        <td>Sim</td>
+                        <td>ADMIN</td>
                         <td>
                             <a href="javascript:void(0)" class="botao">Editar</a>
                             <a href="javascript:void(0)" class="botao excluir">Excluir</a>
@@ -121,12 +103,10 @@
                     </tr>
                     <tr>
                         <td class="fit">2</td>
-                        <td>texto 2</td>
-                        <td>texto 3</td>
-                        <td>texto 4</td>
-                        <td>texto 5</td>
-                        <td>texto 6</td>
-                        <td>texto 7</td>
+                        <td>Daniel</td>
+                        <td>daniel</td>
+                        <td>Sim</td>
+                        <td>ADMIN</td>
                         <td>
                             <a href="javascript:void(0)" class="botao">Editar</a>
                             <a href="javascript:void(0)" class="botao excluir">Excluir</a>
@@ -134,12 +114,10 @@
                     </tr>
                     <tr>
                         <td class="fit">3</td>
-                        <td>texto 2</td>
-                        <td>texto 3</td>
-                        <td>texto 4</td>
-                        <td>texto 5</td>
-                        <td>texto 6</td>
-                        <td>texto 7</td>
+                        <td>Daricélio</td>
+                        <td>daricelio</td>
+                        <td>Sim</td>
+                        <td>USUARIO</td>
                         <td>
                             <a href="javascript:void(0)" class="botao">Editar</a>
                             <a href="javascript:void(0)" class="botao excluir">Excluir</a>
@@ -147,12 +125,10 @@
                     </tr>
                     <tr>
                         <td class="fit">4</td>
-                        <td>texto 2</td>
-                        <td>texto 3</td>
-                        <td>texto 4</td>
-                        <td>texto 5</td>
-                        <td>texto 6</td>
-                        <td>texto 7</td>
+                        <td>Laura</td>
+                        <td>laura</td>
+                        <td>Sim</td>
+                        <td>USUARIO</td>
                         <td>
                             <a href="javascript:void(0)" class="botao">Editar</a>
                             <a href="javascript:void(0)" class="botao excluir">Excluir</a>
@@ -160,21 +136,19 @@
                     </tr>
                     <tr>
                         <td class="fit">5</td>
-                        <td>texto 2</td>
-                        <td>texto 3</td>
-                        <td>texto 4</td>
-                        <td>texto 5</td>
-                        <td>texto 6</td>
-                        <td>texto 7</td>
+                        <td>Paulo</td>
+                        <td>paulo</td>
+                        <td>Não</td>
+                        <td>USUARIO</td>
                         <td>
                             <a href="javascript:void(0)" class="botao">Editar</a>
-                            <a href="javascript:void(0)" class="botao excluir">Excluir</a>
+                            <a href="javascript:void(0)" class="botao excluir desabilitado">Excluir</a>
                         </td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="8">Total de registros: 5</td>
+                        <td colspan="6">Total de registros: 5</td>
                     </tr>
                 </tfoot>
             </table>
